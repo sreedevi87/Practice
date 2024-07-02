@@ -1,0 +1,5 @@
+public class SumaPageClass{
+int i=56;
+public void getSumaCode(){
+system.out.println("inside suma code")
+}
