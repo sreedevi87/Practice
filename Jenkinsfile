@@ -46,7 +46,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/sreedevi87/Practice.git'
-                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/regression_test.xml"
+                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunner/regression_test.xml"
                     
                 }
             }
@@ -90,7 +90,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/sreedevi87/Practice.git'
-                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/sanity_test.xml"
+                    bat "mvn clean test -Dsurefire.suiteXmlFiles=/src/test/resources/testrunner/sanity_test.xml"
                     
                 }
             }
