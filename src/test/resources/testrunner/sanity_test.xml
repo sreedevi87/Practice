@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Open cart Regression Suite" verbose="3" parallel="tests"
-	thread-count="3">
-	<test name="open cart registration page test">
-	<parameter name="browser" value="chrome"/>
+<suite name="Open cart Regression Suite" verbose="3"
+	parallel="tests" thread-count="3">
+	
+	<test name="open cart login page test">
+		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.qa.opencart.tests.ProductInfoPageTest" />
+			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
 	</test>
-
+	
 </suite>
