@@ -32,7 +32,7 @@ public class BaseTest {
 	//public void setup(@Optional String browserName) {
 		df = new DriverFactory();
 		prop=df.initProp();
-		if (browserName!=null) prop.setProperty("browser", browserName);
+		if (browserName!=null) {prop.setProperty("browser", browserName);}
 		driver = df.initDriver(prop);
 		loginPage=new LoginPage(driver);
 	
